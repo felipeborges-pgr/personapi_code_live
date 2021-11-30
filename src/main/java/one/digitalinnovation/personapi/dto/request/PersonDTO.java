@@ -1,10 +1,11 @@
 package one.digitalinnovation.personapi.dto.request;
 
 import com.sun.istack.NotNull;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.br.CPF;
-
-import java.util.List;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
@@ -32,8 +33,7 @@ public class PersonDTO {
     private String cpf;
 
     @NotNull
-    @Getter
-    private String birthDate;
+    private String birth;
 
     @Valid
     @NotEmpty
